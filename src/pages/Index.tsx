@@ -67,6 +67,14 @@ const Index = () => {
             No results found for {selectedState}. Try another state.
           </div>
         )}
+
+        {/* Footer with creator name */}
+        <footer className="mt-16 text-center text-sm text-muted-foreground py-4 border-t border-border">
+          <p className="animate-fade-up">
+            Created with ❤️ by{" "}
+            <span className="text-primary font-semibold">Aman</span>
+          </p>
+        </footer>
       </div>
     </div>
   );
