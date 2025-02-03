@@ -4,7 +4,7 @@ import { fetchVoterData } from "../services/voterService";
 import StateSelect from "../components/StateSelect";
 import StateCard from "../components/StateCard";
 import { VoterData } from "../types/voter";
-import { Moon, Stars } from "lucide-react";
+import { Moon, Stars, Github, Linkedin, Instagram, Globe, Code } from "lucide-react";
 
 const Index = () => {
   const [selectedState, setSelectedState] = useState("");
@@ -68,12 +68,61 @@ const Index = () => {
           </div>
         )}
 
-        {/* Footer with creator name */}
-        <footer className="mt-16 text-center text-sm text-muted-foreground py-4 border-t border-border">
-          <p className="animate-fade-up">
-            Created with ❤️ by{" "}
-            <span className="text-primary font-semibold">Aman</span>
-          </p>
+        {/* Footer with creator information */}
+        <footer className="mt-16 text-center text-sm text-muted-foreground py-8 border-t border-border">
+          <div className="animate-fade-up space-y-4">
+            <p className="text-lg font-semibold">
+              Created with ❤️ by{" "}
+              <span className="text-primary">Sandeep Sharma</span>
+            </p>
+            <p className="text-muted-foreground">
+              <a href="mailto:sandeesharma09@gmail.com" className="hover:text-primary transition-colors">
+                sandeesharma09@gmail.com
+              </a>
+            </p>
+            <div className="flex justify-center gap-4 pt-2">
+              <a
+                href="https://github.com/Sandeep0900"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                <Github className="w-5 h-5" />
+              </a>
+              <a
+                href="https://linkedin.com/in/sandeep-sharma404"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                <Linkedin className="w-5 h-5" />
+              </a>
+              <a
+                href="https://instagram.com/sandeep_._20_._"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                <Instagram className="w-5 h-5" />
+              </a>
+              <a
+                href="https://leetcode.com/Sandeep-Sharma"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                <Code className="w-5 h-5" />
+              </a>
+              <a
+                href="https://sandeep0900.github.io/Sandeep-profile-web/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                <Globe className="w-5 h-5" />
+              </a>
+            </div>
+          </div>
         </footer>
       </div>
     </div>
